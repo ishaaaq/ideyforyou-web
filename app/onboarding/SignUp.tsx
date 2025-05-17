@@ -188,7 +188,7 @@ const SignUp = () => {
               <Picker
                 selectedValue={values.role}
                 onValueChange={(itemValue) => setFieldValue('role', itemValue)}
-                style={{ flex: 1, border: 'none',  outlineStyle: 'none' }}
+                style={{ flex: 1, border: 'none',  outlineStyle: 'none', backgroundColor: 'white' }}
               >
                 <Picker.Item label="Select Role" value="" />
                 <Picker.Item label="Domestic Service Provider" value="DSP" />
