@@ -13,7 +13,7 @@ const VerifyCode = () => {
   const [focusedInput, setFocusedInput] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
  
-  const [cooldown, setCooldown] = useState(30);
+  const [cooldown, setCooldown] = useState(60);
   const [canResend, setCanResend] = useState(false);
 
   const inputs = useRef<Array<TextInput | null>>([]);
@@ -123,7 +123,7 @@ const VerifyCode = () => {
     if (error) {
       // console.error('Resend error:', error);
     } else {
-      setCooldown(30);
+      setCooldown(60);
     }
   };
 
