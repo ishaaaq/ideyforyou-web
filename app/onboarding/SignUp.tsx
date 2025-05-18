@@ -191,8 +191,8 @@ const SignUp = () => {
                 style={{ flex: 1, border: 'none',  outlineStyle: 'none', backgroundColor: 'white' }}
               >
                 <Picker.Item label="Select Role" value="" />
-                <Picker.Item label="Domestic Service Provider" value="DSP" />
-                <Picker.Item label="Real Estate Partner" value="REP" />
+                <Picker.Item label="Domestic Violence Service Provider" value="DSP" />
+                <Picker.Item label="Real Estate Service Provider" value="REP" />
               </Picker>
             </View>
             {errors.role && touched.role && <Text style={styles.errorText}>{errors.role}</Text>}
